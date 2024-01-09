@@ -12,7 +12,7 @@ public class ContextListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce) {
         LocalDateTime initTime = LocalDateTime.now();
         ServletContext servletContext = sce.getServletContext();
-        servletContext.setAttribute("servletTimeInit", initTime.toLocalTime());
+        servletContext.setAttribute("servletTimeInit", initTime);
     }
 
     @Override
